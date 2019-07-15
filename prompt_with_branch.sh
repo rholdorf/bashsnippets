@@ -16,6 +16,6 @@ __git_status() {
     fi
 }
 
-PS1='\[\033[01;34m\]\w\[\033[00m\]$(__git_status) $ '
+PS1='\[\033[01;34m\]\W\[\033[00m\]$(__git_status) \\$ \[$(tput sgr0)\]'
 export PS1
 
