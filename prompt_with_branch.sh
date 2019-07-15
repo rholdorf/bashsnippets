@@ -9,7 +9,7 @@ __git_status() {
     /^Changes not staged / {printf(" (not staged)")}
     /^Changes to be committed/ {printf(" (to be commited)")}
     /^Your branch is ahead of/ {printf(" (ahead of)")}
-    /^nothing to commit/ {printf(" (clean)")}
+    /^nothing to commit, working tree clean/ {printf(" (clean)")}
     ')
     if [ -n "$STATUS" ]; then
         echo -ne " $STATUS"
